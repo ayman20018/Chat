@@ -1,0 +1,17 @@
+<div>
+        <div id='profile'>
+            <img id='ProfilePic' src={pic} alt=''></img>
+            <ul id='options'>
+              <Link to="/Profile">
+                <li class='option' >Profile</li>
+              </Link>
+              <Link to='/Chats'>
+                <li class='option' >Chats</li>
+                </Link>
+                <Link to='/CreateChat'>
+                <li class='option'>Create Chat</li>
+                </Link>
+                <button class='logout' onClick={() => {auth.signOut()
+                history.push('/Login')}}>Sign Out</button>
+                </ul>
+        </div>
